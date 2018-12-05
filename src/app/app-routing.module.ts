@@ -8,9 +8,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 const routes: Routes = [
   {
     path: '',
-    // component: HomeComponent,
-    pathMatch: 'full',
-    redirectTo: '/control-panel'
+    component: HomeComponent,
+    // pathMatch: 'full',
+    // redirectTo: '/control-panel'
   },
   {
     path: 'control-panel',

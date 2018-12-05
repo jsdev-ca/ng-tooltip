@@ -51,17 +51,17 @@ export class ControlPanelComponent implements AfterViewInit, OnDestroy {
         isVisible: false
       }
     },
-    // {
-    //   button: {
-    //     classNames: 'btn-success',
-    //     content: 'C'
-    //   },
-    //   tooltip: {
-    //     body: 'Venison rump drumstick flank kielbasa salami shoulder tail.',
-    //     classNames: 'top',
-    //     isVisible: false
-    //   }
-    // }
+    {
+      button: {
+        classNames: 'btn-success',
+        content: 'C'
+      },
+      tooltip: {
+        body: 'Venison rump drumstick flank kielbasa salami shoulder tail.',
+        classNames: 'top',
+        isVisible: false
+      }
+    }
   ];
 
   ngAfterViewInit(): void {
