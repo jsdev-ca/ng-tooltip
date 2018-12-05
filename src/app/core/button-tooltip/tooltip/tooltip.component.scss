@@ -1,0 +1,35 @@
+.custom-tooltip {
+  left: calc(-100px + 15px);
+  position: absolute;
+  width: 200px;
+
+  &::after {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: "";
+    left: calc(50% - 5px);
+    position: absolute;
+  }
+
+  &.top {
+    bottom: 60px;
+
+    &::after {
+      border-top: 10px solid #272822;
+      bottom: -10px;
+    }
+  }
+
+  &.bottom {
+    top: 60px;
+
+    &::after {
+      border-bottom: 10px solid #272822;
+      top: -10px;
+    }
+  }
+}
+
+.tooltip-inner {
+  background: #272822;
+}

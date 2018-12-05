@@ -1,0 +1,6 @@
+<div *ngFor="let state of states">
+  <app-button-tooltip
+    [onButtonClick]="hideNeighbouringTooltip.bind(this)"
+    [state]="state"
+  ></app-button-tooltip>
+</div>

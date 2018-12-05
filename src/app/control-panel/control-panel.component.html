@@ -1,0 +1,23 @@
+<div class="control-panel-page">
+  <section class="control-panel-section-one">
+    <header class="header">
+      <a routerLink="/" style="visibility: hidden;">
+        Go Home
+      </a>
+    </header>
+
+    <div class="flex-center">
+      <app-button-tooltip-group
+        class="button-tooltip-group"
+        [states]="states"
+      >
+      </app-button-tooltip-group>
+    </div>
+  </section>
+
+  <section class="control-panel-section-two">
+    <div class="flex-center" style="visibility: hidden;">
+      <app-button-tooltip [state]="state"></app-button-tooltip>
+    </div>
+  </section>
+</div>

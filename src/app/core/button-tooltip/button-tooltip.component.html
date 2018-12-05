@@ -1,0 +1,19 @@
+<div
+  appRepositionOnProximityToEdge
+  class="button-tooltip-container"
+  [state]="state"
+>
+  <app-tooltip
+    appHideOnSelectEvents
+    [body]="state.tooltip.body"
+    [classNames]="state.tooltip.classNames"
+    [isVisible]="state.tooltip.isVisible"
+    [state]="state"
+  ></app-tooltip>
+  <app-button
+    [classNames]="state.button.classNames"
+    [content]="state.button.content"
+    [isTooltipVisible]="state.tooltip.isVisible"
+    (click)="hideNeighbouringTooltip($event); toggleTooltip($event)"
+  ></app-button>
+</div>
